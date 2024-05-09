@@ -5,7 +5,7 @@
  * some elements of it
  */
 
-project pSix "Web Game"  2024-03-15 +2.5m {
+project pSix "Web Game"  2024-03-15 +4m {
   # Set the default time zone for the project. If not specified, UTC
   # is used.
   timezone "Europe/Paris"
@@ -48,6 +48,8 @@ account cost "Project Cost" {
   account wFront "Web Front-End"
   account mFront "Movil Front-End"
   account back "Back-End"
+  account backD "Back-End Deployment"
+
 }
 account rev "Payments"
 # The Profit&Loss analysis should be rev - cost accounts.
@@ -186,7 +188,7 @@ task WMGame "Web & Mobile Game" {
   task tbackD "Back End Deployment" {
       # It is necessary to “purge” the “chargeset” because it has been assigned previously to other variable 
       purge chargeset
-      chargeset back
+      chargeset backD
       responsible dev1
       depends WMGame.tback
       task tbackDCloud "Back-end Deployment Cloud Choice and Evaluation" {
