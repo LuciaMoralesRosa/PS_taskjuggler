@@ -183,7 +183,7 @@ task WMGame "Web & Mobile Game" {
       purge chargeset
       chargeset back
       responsible dev1
-      depends WMGame.tbç
+      depends WMGame.tb
       task tbackDCloud "Back-end Deployment Cloud Choice and Evaluation" {
         inicial: effort 20d
         allocate dev1
