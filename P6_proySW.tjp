@@ -286,6 +286,10 @@ textreport frame "" {
     formats html
     center '<[report id="overview"]>'
   }
+  textreport overvi "Overview Inicial" {
+    formats html
+    center '<[report id="overviewInicial"]>'
+  }
 
   textreport "Status" {
     formats html
@@ -334,7 +338,7 @@ taskreport overview "" {
 }
 
 # A traditional Gantt chart with the initial project overview.
-taskreport overview "" {
+taskreport overviewInicial "" {
   scenarios inicial
   headline "Initial Project Plan"
   columns bsi { title 'WBS' },
