@@ -171,9 +171,9 @@ task WMGame "Web & Mobile Game" {
     responsible dev4
     depends WMGame.tback.tBEd
     task tGUIMovild "Movil GUI Design" {
-      effort 9d
-      inicial: effort 9d
-      actual:effort 15d
+      effort 2d
+      inicial: effort 2d
+      actual:effort 2d
       allocate dev4
       journalentry 2024-05-09 "Problems with the GUI design tool" {
         author dev4
@@ -182,14 +182,14 @@ task WMGame "Web & Mobile Game" {
       }
     }
     task tMovilFEc "Movil Front End Construction" {
-      effort 15d
-      inicial: effort 15d
+      effort 1d
+      inicial: effort 1d
       allocate dev2, dev4
       depends WMGame.tMovilF.tGUIMovild
     }
     task tMovilFEt "Movil Front End Test" {
-      effort 6d
-      inicial: effort 6d
+      effort 1d
+      inicial: effort 1d
       allocate dev1
       depends WMGame.tMovilF.tMovilFEc
     }    
@@ -202,13 +202,13 @@ task WMGame "Web & Mobile Game" {
       responsible dev1
       depends WMGame.tback
       task tbackDCloud "Back-end Deployment Cloud Choice and Evaluation" {
-        effort 20d
-        inicial: effort 20d
+        effort 1d
+        inicial: effort 1d
         allocate dev1
       }
       task tbackDDep "Back-end Deployment Cloud Deployment" {
-        effort 20d
-        inicial: effort 20d
+        effort 1d
+        inicial: effort 1d
         allocate dev1
         depends WMGame.tbackD.tbackDCloud
       }
