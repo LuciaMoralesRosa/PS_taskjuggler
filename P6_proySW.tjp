@@ -69,8 +69,13 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
+
+shift horasTrabajo4h "lunes-viernes-4h"{
+  workinghours mon - fri 8:00-12:00
+}
 resource dev4 "Lucia Morales" {
   email "816906@unizar.es"
+  shifts horasTrabajo4h
 }
 
 # Now we specify the work packages. The whole project is described as
@@ -183,7 +188,7 @@ task WMGame "Web & Mobile Game" {
       purge chargeset
       chargeset back
       responsible dev1
-      depends WMGame.tb
+      depends WMGame.tback
       task tbackDCloud "Back-end Deployment Cloud Choice and Evaluation" {
         inicial: effort 20d
         allocate dev1
