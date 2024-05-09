@@ -71,7 +71,6 @@ resource dev3 "Peter Green" {
 }
 resource dev4 "Lucia Morales" {
   email "816906@unizar.es"
-  dailyworkinghours 4
 }
 
 # Now we specify the work packages. The whole project is described as
