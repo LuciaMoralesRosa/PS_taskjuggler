@@ -286,7 +286,7 @@ textreport frame "" {
     formats html
     center '<[report id="overview"]>'
   }
-  textreport overvi "Overview Inicial" {
+  textreport overviInicial "Overview Inicial" {
     formats html
     center '<[report id="overviewInicial"]>'
   }
